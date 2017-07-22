@@ -1,0 +1,17 @@
+<html ng-app="first">  
+    <head>
+     <script src="angular.js"></script>  
+     <link rel="stylesheet" href="flag-icon-css/css/flag-icon.css"> 
+     <script src="app.js"></script>
+    </head>
+    <body>
+        <div align="center" ng-controller="firstCtrl as first">
+        
+        <input type="text" ng-model="first.name">
+        <br>
+        <button ng-click="first.fire()"> Fire</button>
+    <span class="flag-icon flag-icon-{{first.coun}}"></span>
+    <div ng-if="first.name && first.name==first.check">   Well Done your attempt is perfect!!</div>
+    </div>
+    </body>
+</html>
